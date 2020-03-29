@@ -50,13 +50,14 @@ public class Demo03_Loop {
             System.out.printf("Please Input Your Score from 0 - 100 : ");
             a = keyboard.nextInt();
 
+            // a = 85
             if ( !(a >= 0 && a <= 100) ) {
                 System.out.println("You Input Wrong Number. Please Try Again");
                 System.out.println("---------");
             }
         } while (a < 0 || a > 100);
 
-            compareScoreToGrade(a);
+       compareScoreToGrade(a);
         System.out.println("WaterMelon !! ");
     }
 
@@ -78,6 +79,14 @@ public class Demo03_Loop {
             System.out.println("You Got Grade D");
         } else {
             System.out.println("You Got Grade F");
+        }
+    }
+
+    public static void unlimitLoop(){
+        int i = 0;
+        while (true && i < 100){
+            System.out.printf("%d WaterMelon !! \n", i);
+            i ++;
         }
     }
 }
