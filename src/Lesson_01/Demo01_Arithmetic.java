@@ -1,5 +1,7 @@
 package Lesson_01;
 
+import java.util.Scanner;
+
 public class Demo01_Arithmetic {
 
     public static void main(String[] args) {
@@ -77,5 +79,102 @@ public class Demo01_Arithmetic {
         x = m+=3 + ++n - o++;       // 5 + 5 - 6
         System.out.println("x = " + x);
 
+    }
+
+    public static void ex_01(){
+        System.out.println("--- Compound Assigment Operator ---");
+        System.out.printf("Please Input A : ");
+        Scanner keyboard = new Scanner(System.in);
+        int a = keyboard.nextInt();
+
+        byte totalWaterMelon = 0;
+        totalWaterMelon += additional_method(a);
+        totalWaterMelon += subtraction_method(a);
+        totalWaterMelon += multiplication_method(a);
+        totalWaterMelon += devision_method(a);
+        totalWaterMelon += remainder_method(a);
+
+        System.out.println(String.format("You've Got %d / 5 WaterMelons !!!", totalWaterMelon));
+        System.out.println("--- End of Demo01_Example 01 ---");
+    }
+
+    private static byte additional_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A + 10 : ");
+        int ans = a + 10;
+
+        byte pt = 0;
+        if (new Scanner(System.in).nextInt() == ans) {
+            System.out.println("WaterMelon !!");
+            pt = 1;
+        } else
+            System.out.println("Nope A + 10 is " + ans);
+
+        System.out.println("-----------------");
+        return pt;
+    }
+
+    private static byte subtraction_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A - 10 : ");
+        int ans = a - 10;
+
+        byte pt = 0;
+        if (new Scanner(System.in).nextInt() == ans) {
+            System.out.println("WaterMelon !!");
+            pt = 1;
+        } else
+            System.out.println("Nope A - 10 is " + ans);
+
+        System.out.println("-----------------");
+        return pt;
+    }
+
+    private static byte multiplication_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A * 10 : ");
+        int ans = a * 10;
+
+        byte pt = 0;
+        if (new Scanner(System.in).nextInt() == ans) {
+            System.out.println("WaterMelon !!");
+            pt = 1;
+        } else
+            System.out.println("Nope A * 10 is " + ans);
+
+        System.out.println("-----------------");
+        return pt;
+    }
+
+    private static byte devision_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A / 10 : ");
+        int ans = a / 10;
+
+        byte pt = 0;
+        if (new Scanner(System.in).nextInt() == ans) {
+            System.out.println("WaterMelon !!");
+            pt = 1;
+        } else
+            System.out.println("Nope A / 10 is " + ans);
+
+        System.out.println("-----------------");
+        return pt;
+    }
+
+    private static byte remainder_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A %% 10 : ");
+        int ans = a % 10;
+
+        byte pt = 0;
+        if (new Scanner(System.in).nextInt() == ans) {
+            System.out.println("WaterMelon !!");
+            pt = 1;
+        } else
+            System.out.println("Nope A %% 10 is " + ans);
+
+        System.out.println("-----------------");
+        return pt;
     }
 }
