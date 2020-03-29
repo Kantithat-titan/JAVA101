@@ -82,7 +82,7 @@ public class Demo01_Arithmetic {
     }
 
     public static void ex_01(){
-        System.out.println("--- Compound Assigment Operator ---");
+        System.out.println("--- Basic Operator ---");
         System.out.printf("Please Input A : ");
         Scanner keyboard = new Scanner(System.in);
         int a = keyboard.nextInt();
@@ -177,4 +177,91 @@ public class Demo01_Arithmetic {
         System.out.println("-----------------");
         return pt;
     }
+
+    public static void compoundAssignmentOperator(){
+        System.out.println("--- Compound Assigment Operator ---");
+        System.out.printf("Please Input A : ");
+        Scanner keyboard = new Scanner(System.in);
+        int a = keyboard.nextInt();
+        int final_num = (((a+5-10)*2)/10)%2;
+        a = compound_add_method(a);
+        a = compound_minus_method(a);
+        a = compound_multiple_method(a);
+        a = compound_division_method(a);
+        a = compound_remainder_method(a);
+
+        System.out.println("Your answer is " + a);
+        System.out.println(a == final_num ? "WaterMelon !!!" : "Please Try Again Buddy");
+    }
+
+    private static int compound_add_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A += 5 : ");
+        a += 5;
+
+        if (new Scanner(System.in).nextInt() == a)
+            System.out.println("WaterMelon !!");
+        else
+            System.out.println("Nope A += 5 : " + a);
+
+        System.out.println("-----------------");
+        return a;
+    }
+
+    private static int compound_minus_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A -= 10 : ");
+        a -= 10;
+
+        if (new Scanner(System.in).nextInt() == a)
+            System.out.println("WaterMelon !!");
+        else
+            System.out.println("Nope A -= 10 : " + a);
+
+        System.out.println("-----------------");
+        return a;
+    }
+
+    private static int compound_multiple_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A *= 2 : ");
+        a *= 2;
+
+        if (new Scanner(System.in).nextInt() == a)
+            System.out.println("WaterMelon !!");
+        else
+            System.out.println("Nope A *= 2 : " + a);
+
+        System.out.println("-----------------");
+        return a;
+    }
+
+    private static int compound_division_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A /= 10 : ");
+        a /= 10;
+
+        if (new Scanner(System.in).nextInt() == a)
+            System.out.println("WaterMelon !!");
+        else
+            System.out.println("Nope A /= 10 : " + a);
+
+        System.out.println("-----------------");
+        return a;
+    }
+
+    private static int compound_remainder_method(int a){
+        System.out.println("A is : " + a);
+        System.out.printf("What is A %%= 2 : ");
+        a %= 2;
+
+        if (new Scanner(System.in).nextInt() == a)
+            System.out.println("WaterMelon !!");
+        else
+            System.out.println("Nope A %%= 2 : " + a);
+
+        System.out.println("-----------------");
+        return a;
+    }
+
 }
