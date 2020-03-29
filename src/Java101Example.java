@@ -13,7 +13,7 @@ public class Java101Example {
 //        Demo02_ControlStatement.switchCaseStatement();
 //        Demo02_ControlStatement.ifElseStatement();
 
-//        Demo03_Loop.forLoop();
+        Demo03_Loop.forLoop();
 //        Demo03_Loop.whileLoop();
 //        Demo03_Loop.doWhileLoop();
 
