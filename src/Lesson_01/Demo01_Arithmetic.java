@@ -189,6 +189,42 @@ public class Demo01_Arithmetic {
     }
 
     public static void incrementDecrementOperator(){
+        System.out.println("--- Increment / Decrement Operator ---");
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.printf("Please Input A : ");
+        int a = keyboard.nextInt();
+
+        System.out.printf("Please Input B : ");
+        int b = keyboard.nextInt();
+
+        System.out.printf("Please Input C : ");
+        int c = keyboard.nextInt();
+
+        System.out.println(String.format("A = %d, B = %d, C = %d", a, b, c));
+        System.out.printf("What is A++ + --B + ++C : ");
+        int ans = a++ + --b + ++c;
+        int input = keyboard.nextInt();
+
+        System.out.println(input == ans ? "WaterMelon!!" : "Answer is " + ans);
+        System.out.println("-----------------");
+
+        System.out.println(String.format("A = %d, B = %d, C = %d", a, b, c));
+        System.out.printf("What is ++A + B-- - C++ : ");
+        ans = ++a + b-- - c++;
+        input = keyboard.nextInt();
+
+        System.out.println(input == ans ? "WaterMelon!!" : "Answer is " + ans);
+        System.out.println("-----------------");
+
+        System.out.println(String.format("A = %d, B = %d, C = %d", a, b, c));
+        System.out.printf("What is A++ + (--B * 2) + ++C : ");
+        ans = a++ + (--b * 2) + ++c;
+        input = keyboard.nextInt();
+
+        System.out.println(input == ans ? "WaterMelon!!" : "Answer is " + ans);
+        System.out.println("-----------------");
+
 
     }
 }
