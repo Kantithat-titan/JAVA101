@@ -11,10 +11,10 @@ public class Demo04_LogicalOperators {
         System.out.println("A = " + a);
         System.out.println("B = " + b);
 
-        System.out.println("A  && B : " + (a && b) );
-        System.out.println("A  || B : " + (a || b) );
-        System.out.println("!A && B : " + (!a && b) );
-        System.out.println("A  || !B : " + (a || (!b) ) );
+        System.out.println("A  && B : " + (a && b));
+        System.out.println("A  || B : " + (a || b));
+        System.out.println("!A && B : " + (!a && b));
+        System.out.println("A  || !B : " + (a || (!b)));
 
 
         /*
@@ -31,7 +31,7 @@ public class Demo04_LogicalOperators {
 //        System.out.println("A & B & C: " + (a & b & c) );
 
 
-        if (1+2 != 3) {
+        if (false) {
             System.out.println("jkdsjkfjsdkf");
         } else {
             System.out.println("XXXXX");

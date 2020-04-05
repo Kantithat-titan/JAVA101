@@ -26,13 +26,9 @@ public class Demo02_ControlStatement {
         System.out.printf("What is A %c 10 : ", ch);
         int ans;
 
-        ch = '%';
-
         switch (ch) {
             case '+':
                 ans = a + 10;
-                System.out.println("dddd");
-                System.out.println("5555");
                 break;
             case '-':
                 ans = a - 10;
@@ -84,13 +80,8 @@ public class Demo02_ControlStatement {
 
         if (ch == '+') {
             ans = a + 10;
-        } else if (ch == '-') {
+        } else if (ch == '-' && true) {
             ans = a - 10;
-
-
-
-
-
         } else if (ch == '*') {
             ans = a * 10;
         } else if (ch == '/') {

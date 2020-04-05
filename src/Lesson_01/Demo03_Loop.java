@@ -31,6 +31,8 @@ public class Demo03_Loop {
         System.out.printf("Please Input Your Score from 0 - 100 : ");
         int a = keyboard.nextInt();
 
+        a = 95;
+        // F || F == F
         while (a < 0 || a > 100) {
             System.out.println("You Input Wrong Number. Please Try Again");
             System.out.println("---------");
@@ -50,7 +52,6 @@ public class Demo03_Loop {
             System.out.printf("Please Input Your Score from 0 - 100 : ");
             a = keyboard.nextInt();
 
-            // a = 85
             if ( !(a >= 0 && a <= 100) ) {
                 System.out.println("You Input Wrong Number. Please Try Again");
                 System.out.println("---------");
@@ -63,7 +64,11 @@ public class Demo03_Loop {
 
     private static void compareScoreToGrade(int a) {
         System.out.println("Your Score : " + a);
-        if (a >= 83) {
+
+        a = 82;
+        int b = 37 ;
+
+        if (a > b ) {
             System.out.println("You Got Grade A");
         } else if (a >= 78) {
             System.out.println("You Got Grade B+");
